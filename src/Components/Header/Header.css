@@ -1,0 +1,298 @@
+.HeaderContainer {
+  font-size: 50px;
+
+}
+/* .HeaderSlider {
+  box-shadow: #ffffff9a;
+} */
+
+.onHeader {
+  padding-top: 20px;
+  /* position: absolute; */
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  color: rgb(255, 255, 255);
+  background-color: rgba(211, 211, 211, 0.804);
+}
+.logo {
+  align-self: right;
+}
+.LogoPic {
+  width: 350px;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  color: black;
+}
+.link-underheader {
+  color: white!important;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 55px;
+}
+
+#hidden {
+  display: flex;
+}
+.tab-btn {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.TabBarContainer {
+  text-align: center;
+  padding: 15px;
+  
+}
+
+.pOnImage {
+  color: rgba(255, 255, 255, 0.755);
+  text-align: center;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-top: 40px !important;
+}
+.w3rcontainer {
+  border: 1px solid #cccfdb;
+  border-radius: 2px;
+}
+.hover-underline-animation1 {
+  display: inline-block;
+  position: relative;
+  color: red;
+}
+
+.hover-underline-animation1:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation1:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.hover-underline-animation2 {
+  display: inline-block;
+  position: relative;
+  color: red;
+}
+.hover-underline-animation2:after {
+  content: "";
+  position: absolute;
+  width: 62%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation2:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hover-underline-animation3 {
+  display: inline-block;
+  position: relative;
+  color: red;
+}
+.hover-underline-animation3:after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation3:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hover-underline-animation4 {
+  display: inline-block;
+  position: relative;
+  color: red;
+}
+.hover-underline-animation4:after {
+  content: "";
+  position: absolute;
+  width: 77%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation4:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hover-underline-animation5 {
+  display: inline-block;
+  position: relative;
+  color: red;
+}
+.hover-underline-animation5:after {
+  content: "";
+  position: absolute;
+  width: 80.5%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation5:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hover-underline-animation6 {
+  display: inline-block;
+  position: relative;
+  color: red;
+}
+.hover-underline-animation6:after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation6:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.DropDownMenu {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  bottom: auto;
+  /* orjust remove */
+  left: 0;
+  z-index: 4;
+  display: none;
+}
+.drop:hover + .DropDownMenu {
+  display: block;
+}
+li {
+  list-style: none;
+}
+
+.enIcon {
+  width: 25px;
+  margin: 0px 3px;
+  padding: 0px;
+  vertical-align: center;
+}
+
+.langContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+.langButton {
+  background-color: transparent;
+  border: none;
+}
+.langButton:active {
+  background-color: red;
+  /* border: 1px solid red; */
+}
+
+@media screen and (max-width: 1090px) {
+  .HeaderContainer {
+    background-size: cover;
+  }
+  .tab-btn {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+  .links {
+    display: none;
+  }
+  #hidden {
+    position: absolute;
+    left: 0px;
+    /* top: 80px; */
+    margin-top: 18px;
+    padding-top: 15px;
+    height: auto;
+    width: 100%;
+    /* height: 100vh; */
+    background-color: rgba(36, 30, 18, 0.81);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+  }
+  .link-underheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 70%;
+  }
+  .pOnImage {
+    font-size: 16px;
+  }
+  .LogoPic {
+    width: 230px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .LogoPic {
+    width: 180px;
+  }
+}

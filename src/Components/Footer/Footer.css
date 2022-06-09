@@ -1,0 +1,89 @@
+.Container {
+  background-color: rgba(211, 211, 211, 0.804);
+  padding-top: 50px;
+  margin-top: 40px;
+}
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+.footerLogo {
+  width: 500px;
+}
+.footerInfo {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* font-weight: bold; */
+  font-size: 18px;
+  color: #345e9ee3;
+  /* font-weight: bold; */
+  display: flex;
+  flex-direction: row;
+}
+
+.footerPhone .phone {
+  color: #345e9e;
+  font-weight: bold;
+}
+.footerEmail .email {
+  color: #345e9e;
+  font-weight: bold;
+}
+.footerPhone {
+  padding-right: 100px;
+}
+
+.copyRight {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 2px;
+  padding-top: 50px;
+}
+
+@media screen and (max-width: 1090px) {
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerLogo {
+    width: 250px;
+  }
+  .footerInfo {
+    padding-top: 50px;
+    font-size: 14px;
+    color: #345e9ee3;
+    display: flex;
+    flex-direction: row;
+  }
+  .copyRight {
+    font-size: 9px;
+    text-align: center;
+    margin-bottom: 2px;
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footerLogo {
+    width: 200px;
+  }
+  .footerInfo {
+    padding-top: 50px;
+    font-size: 12px;
+    color: #345e9ee3;
+    display: flex;
+    flex-direction: row;
+  }
+  .copyRight {
+    font-size: 6px;
+    text-align: center;
+    margin-bottom: 2px;
+    padding-top: 50px;
+  }
+}

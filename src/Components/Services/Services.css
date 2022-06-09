@@ -1,0 +1,78 @@
+.ServicesContainer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.CardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+.CardsContainer .Card {
+  margin: 30px;
+  width: 320px;
+}
+.cardImg {
+  height: 200px;
+}
+.MainService {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  padding-bottom: 0px !important;
+}
+.descService {
+  font-size: 16px !important;
+  font-weight: bold;
+  padding-bottom: 0px !important;
+}
+.ServicesP {
+  text-align: center;
+  font-size: 30px;
+  color: #d0021b;
+  font-weight: bold;
+}
+.ServicesP span {
+  font-weight: normal;
+}
+@media screen and (max-width: 860px) {
+  .ServicesContainer {
+    padding-top: 50px;
+    padding-bottom: 150px;
+  }
+  .CardsContainer {
+    flex-direction: column;
+  }
+  .CardsContainer .Card {
+    width: 400px;
+    /* height: 240px; */
+  }
+}
+@media screen and (max-width: 480px) {
+  .ServicesContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .CardsContainer {
+    flex-direction: column;
+  }
+  .CardsContainer .Card {
+    width: 300px;
+    margin: 5px;
+    margin-bottom: 20px;
+  }
+  .MainService {
+    font-size: 16px !important;
+    font-weight: bold !important;
+    padding-bottom: 0px !important;
+  }
+  .descService {
+    font-size: 12px !important;
+    font-weight: bold;
+    padding-bottom: 0px !important;
+  }
+  .cardImg {
+    height: 90px !important;
+  }
+}

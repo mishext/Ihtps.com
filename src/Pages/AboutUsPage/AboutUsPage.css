@@ -1,0 +1,11 @@
+@media screen and (max-width: 1090px) {
+  .AboutUsContainer {
+    padding-top: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .AboutUsContainer {
+    padding-top: 100px;
+  }
+}

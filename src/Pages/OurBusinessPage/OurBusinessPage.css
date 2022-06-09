@@ -1,0 +1,106 @@
+.ourBusinessContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-left: 70px;
+  background: url(../../Images/bg-about.jpg) repeat-x top center;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
+.firstRowBusiness {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  color: #666f84;
+  font-size: 20px;
+}
+.firstRowImage {
+  width: 600px;
+  padding-right: 150px;
+}
+.heading {
+  font-size: 40px;
+  color: #00548b;
+  font-weight: bold;
+}
+.heading span {
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
+  width: fit-content;
+  border-color: #d0021b;
+  font-weight: 100;
+}
+.headingInfoO {
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+  color: #666f84;
+  font-size: 20px;
+  width: 56%;
+  /* color: #d0021b; */
+}
+
+@media screen and (max-width: 1090px) {
+  .ourBusinessContainer {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 120px;
+  }
+  .firstRowBusiness {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    justify-items: start;
+    align-items: flex-start;
+    font-size: 20px;
+  }
+  .firstRowImage {
+    width: 200px;
+    padding-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .headingInfoO {
+    width: 100%;
+  }
+  .heading {
+    font-size: 30px;
+  }
+  .headingInfo {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ourBusinessContainer {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 100px;
+  }
+  .firstRowBusiness {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    justify-items: start;
+    align-items: flex-start;
+    font-size: 18px;
+  }
+  .firstRowImage {
+    width: 300px;
+    padding-right: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .heading {
+    font-size: 20px;
+    width: 100%;
+  }
+  .headingInfo {
+    width: 100%;
+    font-size: 12px;
+  }
+}
