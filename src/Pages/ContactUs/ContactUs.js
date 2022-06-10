@@ -1,8 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./ContactUs.css";
 import WhatsAppIcon from "../../Images/whatsApp.png";
 
 export default function ContactUs() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_f701v97",
+        "template_2wgkdgj",
+        form.current,
+        "xYHUFHTWR65s0lfxd"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div>
       {/* <CustomHeader /> */}
@@ -32,6 +55,20 @@ export default function ContactUs() {
             </a>
           </li>
         </ol>
+        <div>
+          <form ref={form} onSubmit={sendEmail} className="formContainer">
+            <p className="FormWord">For Any inquiry, please Fill the Form</p>
+            <label className="label">Name</label>
+            <input type="name" name="name" className="inputNormal" />
+            <label className="label">Email</label>
+            <input type="email" name="email" className="inputNormal" />
+            <label className="label">Phone Number</label>
+            <input type="tel" name="phone" className="inputNormal" id="phone" />
+            <label className="label">Message</label>
+            <textarea name="message" className="inputMessg" />
+            <input type="submit" value="Submit" className="sendButton" />
+          </form>
+        </div>
       </div>
     </div>
   );

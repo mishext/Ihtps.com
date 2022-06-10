@@ -9,6 +9,7 @@ import Service1 from "../../Images/services.jpg";
 import Service2 from "../../Images/test6.jpg";
 import Service3 from "../../Images/services3.jpg";
 import "./Services.css";
+
 export default function Services() {
   return (
     <div className="ServicesContainer">

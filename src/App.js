@@ -14,7 +14,6 @@ import CustomHeader from "./Components/CustomHeader/CustomHeader";
 import Machines from "./Pages/MachinesPage/Machines";
 import ItemPage from "./Pages/ItemPage/ItemPage";
 
-
 function App() {
   // const [englsih, setEnglish] = useState();
   // const [french, setFrench] = useState();
@@ -26,24 +25,22 @@ function App() {
   //   strings.setLanguage("fr");
   //   setFrench();
   // }
- 
-  return (
 
-   <Router>
-       <Routes> 
+  return (
+    <Router>
+      <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/aboutUs"element={<AboutUsPage />}/>
+        <Route path="/aboutUs" element={<AboutUsPage />} />
         <Route path="/ourbusiness" element={<OurBusinessPage />} />
         <Route path="turnkey-projects" element={<TurnKeyProjectsPage />} />
         <Route path="business-opportunities" element={<BusinessOpp />} />
-        {/* <Route path="contact-us" element={<ContactUS />} /> */}
-        <Route path="/machines"  element={<Machines />} />
+        <Route path="contact-us" element={<ContactUS />} />
+        <Route path="/machines" element={<Machines />} />
         <Route path="/itemPage" element={<ItemPage />} />
       </Routes>
-        <Header />
-        <Footer /> 
-   </Router>
-   
+      <Header />
+      <Footer />
+    </Router>
   );
 }
 

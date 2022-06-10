@@ -1,5 +1,6 @@
+
 {"data": [
-    {"id": 0, "name": "Machine1", "details": "Forming, filling and sealing machine for yoghurt cups", "img": "https://files.worldwildlife.org/wwfcmsprod/images/Lion_Action_Figure_WW_winter2020/story_full_width/2w0gmg418v_lion_actionfigure_WWwinter2020.jpg"  },
+    {"id": 0, "name": "Machine1", "details": "Forming, filling and sealing machine for yoghurt cups", "img":  "../../public/lines" },
     {"id": 2, "name": "Machine2", "details": "Nominal output: 21,000 pots per hour", "img": "https://www.inspiredtaste.net/wp-content/uploads/2021/06/Grilled-Chicken-Recipe-5-1200.jpg"  }
 
 ]}

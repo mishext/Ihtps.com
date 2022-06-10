@@ -1,6 +1,5 @@
 .HeaderContainer {
   font-size: 50px;
-
 }
 /* .HeaderSlider {
   box-shadow: #ffffff9a;
@@ -8,7 +7,8 @@
 
 .onHeader {
   padding-top: 20px;
-  /* position: absolute; */
+  position: absolute;
+  /* pointer-events: none; */
   top: 0;
   width: 100%;
   display: flex;
@@ -19,6 +19,12 @@
   align-content: center;
   color: rgb(255, 255, 255);
   background-color: rgba(211, 211, 211, 0.804);
+}
+.uaeFlag {
+  width: 40px;
+  position: absolute;
+  right: 50px;
+  padding-bottom: 12px;
 }
 .logo {
   align-self: right;
@@ -32,11 +38,13 @@
   color: black;
 }
 .link-underheader {
-  color: white!important;
+  /* color: white !important; */
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
   padding-right: 55px;
+  color: #345e9e;
+  height: 4vh;
 }
 
 #hidden {
@@ -51,7 +59,6 @@
 .TabBarContainer {
   text-align: center;
   padding: 15px;
-  
 }
 
 .pOnImage {
@@ -68,7 +75,7 @@
 .hover-underline-animation1 {
   display: inline-block;
   position: relative;
-  color: red;
+  /* color: red; */
 }
 
 .hover-underline-animation1:after {
@@ -91,7 +98,7 @@
 .hover-underline-animation2 {
   display: inline-block;
   position: relative;
-  color: red;
+  /* color: red; */
 }
 .hover-underline-animation2:after {
   content: "";
@@ -113,7 +120,7 @@
 .hover-underline-animation3 {
   display: inline-block;
   position: relative;
-  color: red;
+  /* color: red; */
 }
 .hover-underline-animation3:after {
   content: "";
@@ -135,7 +142,7 @@
 .hover-underline-animation4 {
   display: inline-block;
   position: relative;
-  color: red;
+  /* color: red; */
 }
 .hover-underline-animation4:after {
   content: "";
@@ -157,7 +164,7 @@
 .hover-underline-animation5 {
   display: inline-block;
   position: relative;
-  color: red;
+  /* color: red; */
 }
 .hover-underline-animation5:after {
   content: "";
@@ -179,7 +186,7 @@
 .hover-underline-animation6 {
   display: inline-block;
   position: relative;
-  color: red;
+  /* color: red; */
 }
 .hover-underline-animation6:after {
   content: "";
@@ -200,13 +207,37 @@
 
 .DropDownMenu {
   position: absolute;
-  top: 10px;
-  left: 20px;
-  bottom: auto;
-  /* orjust remove */
+  top: 20px;
+  width: 10rem;
   left: 0;
-  z-index: 4;
+  text-align: start;
+  list-style: none;
+  background-color: #345e9e;
+  color: white;
+  width: 60%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  /* display: none; */
+}
+.DropDownMenu a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+.DropDownMenu a:active {
+  color: red;
+}
+.DropDownMenu-clicked {
   display: none;
+}
+
+.link-dropDown {
+  background-color: #345e9e;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
 }
 .drop:hover + .DropDownMenu {
   display: block;
@@ -262,25 +293,25 @@ li {
   #hidden {
     position: absolute;
     left: 0px;
-    /* top: 80px; */
     margin-top: 18px;
     padding-top: 15px;
     height: auto;
     width: 100%;
-    /* height: 100vh; */
-    background-color: rgba(36, 30, 18, 0.81);
+    background-color: rgba(36, 30, 18, 0.623);
     display: flex;
     flex-direction: column;
     align-items: center;
- 
   }
   .link-underheader {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    color: white;
   }
-
+  .link-underheader:visited {
+    display: none;
+  }
   .logo {
     width: 70%;
   }
@@ -290,9 +321,24 @@ li {
   .LogoPic {
     width: 230px;
   }
+  .uaeFlag {
+    width: 35px;
+    position: absolute;
+    right: 320px;
+    padding-bottom: 12px;
+  }
 }
 @media screen and (max-width: 480px) {
   .LogoPic {
     width: 180px;
+  }
+  .link-underheader:visited {
+    display: none;
+  }
+  .uaeFlag {
+    width: 30px;
+    position: absolute;
+    right: 120px;
+    padding-bottom: 0px;
   }
 }

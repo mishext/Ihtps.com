@@ -1,11 +1,18 @@
 import React from "react";
 import "./Footer.css";
-import Logo from "../../Images/Logo.png";
-import Sparkles from "../SparkleInstance/Sparkle";
+import Logo from "../../Images/Last-logo.png";
+import WhatsAppIcon from "../../Images/whatsapp-icon.png";
 
 export default function Footer() {
   return (
     <div className="Container">
+      <a href="https://wa.me/+971502511764" className="whatsApp-Icon">
+        <img
+          src={WhatsAppIcon}
+          alt="whatsapp-Icon"
+          className="whatsApp-Image"
+        />
+      </a>
       <div className="footerContainer">
         <img src={Logo} className="footerLogo" alt="footer-logo" />
         <div className="footerInfo">

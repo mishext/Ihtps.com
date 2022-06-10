@@ -1,22 +1,9 @@
-/* .SliderContainer {
-  padding-top: 200px;
-} */
+
 .SliderContainer {
   display: flex;
   margin-bottom: 300px;
 }
-/* .movingText1 {
-  font-size: 26px;
-  position: absolute;
-  top: 38%;
-  right: 5%;
-  font-weight: bold;
-  color: darkblue;
-  background-color: rgba(255, 255, 255, 0.589);
-  border-radius: 50px;
-  padding: 5px;
-  text-align: center;
-} */
+
 .movingText2 {
   display: flex;
   flex-direction: row;
@@ -49,7 +36,7 @@
   filter: brightness(80%);
 }
 
-.besideMovingComp {
+ .besideMovingComp {
   font-size: 50px;
   position: absolute;
   top: 50%;
@@ -69,22 +56,22 @@
   width: fit-content;
   border-color: red;
 }
-.alice-carousel__stage-item {
+.SliderContainer .alice-carousel__stage-item {
   width: 100% !important;
 }
-.alice-carousel__dots {
+.SliderContainer .alice-carousel__dots {
   display: none;
   /* position: absolute;
   bottom: 10%;
   left: 48%; */
 }
-.SliderImage {
+.SliderContainer .SliderImage {
   width: 100%;
   height: 100vh;
   /* height: 100vh !important; */
 }
 
-.alice-carousel__next-btn-item {
+.SliderContainer .alice-carousel__next-btn-item {
   position: absolute;
   top: 40%;
   right: 0;
@@ -95,7 +82,7 @@
   padding-top: 20px;
   color: white !important;
 }
-.alice-carousel__prev-btn-item {
+.SliderContainer .alice-carousel__prev-btn-item {
   position: absolute;
   top: 40%;
   left: 0;
@@ -108,7 +95,7 @@
 
 }
 
-.alice-carousel__next-btn-item:hover,
+.SliderContainer .alice-carousel__next-btn-item:hover,
 .alice-carousel__prev-btn-item:hover {
   background-color: rgba(0, 0, 0, 0.31);
 }
