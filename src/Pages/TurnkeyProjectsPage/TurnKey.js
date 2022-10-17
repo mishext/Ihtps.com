@@ -1,48 +1,34 @@
 import React from "react";
 import "./TurnKey.css";
+import { useTranslation } from "react-i18next";
 
-export default function TurnKey() {
+export default function TurnKey(props) {
+  const { t } = useTranslation();
+  let lng = props.lang;
+
   return (
-    <div>
-
-      <div className="turnKeyContainer">
+    <div className="koko">
+      <div
+        className={lng === "ar" ? "turnKeyContainerRight" : "turnKeyContainer"}
+      >
         <p className="heading">
-          <span>TURNKEY</span> PROJECTS
+          <span>{t("turnkey_w2")}</span> {t("turnkey_w3")}
         </p>
-        <p className="headingInfo1">Our steps are as follows</p>
-        <p className="headingInfoO">- Getting to know your project.</p>
-        <p className="headingInfoO">
-          - Technical feasibility study (Product, rates and budgets, technology,
-          etc).
-        </p>
-        <p className="headingInfoO">
-          - Budget balance according to your final product.
-        </p>
-        <p className="headingInfoO">
-          - Choice of technology and production line.
-        </p>
-        <p className="headingInfoO">
-          - Assistance in the development of the premises to receive this
-          production line.
-        </p>
-        <p className="headingInfoO">
-          - Supplies and installation of equipment on your site.
-        </p>
-        <p className="headingInfoO">
-          - Technical adaptation on site if necessary.
-        </p>
-        <p className="headingInfoO">- Test campaign and product trials.</p>
-        <p className="headingInfoO">- Production launches.</p>
-        <p className="headingInfoO">- Writing of operating procedures.</p>
-        <p className="headingInfoO">- Technical training.</p>
-        <p className="headingInfoO">- Stock of parts served after sales.</p>
-        <p className="headingInfoO">
-          A KEY PROJECT WHILE RESPECTING THE FOLLOWING PRINCIPLES.
-        </p>
-        <p className="headingInfo2">
-          We make it within your budget to manufacture such products at such
-          cost!!
-        </p>
+        <p className="headingInfo1">{t("turnkey_p1")}</p>
+        <p className="headingInfoO">{t("turnkey_p2")}</p>
+        <p className="headingInfoO">{t("turnkey_p3")}</p>
+        <p className="headingInfoO">{t("turnkey_p4")}</p>
+        <p className="headingInfoO">{t("turnkey_p5")}</p>
+        <p className="headingInfoO">{t("turnkey_p6")}</p>
+        <p className="headingInfoO">{t("turnkey_p7")}</p>
+        <p className="headingInfoO">{t("turnkey_p8")}</p>
+        <p className="headingInfoO">{t("turnkey_p9")}</p>
+        <p className="headingInfoO">{t("turnkey_p10")}</p>
+        <p className="headingInfoO">{t("turnkey_p11")}</p>
+        <p className="headingInfoO">{t("turnkey_p12")}</p>
+        <p className="headingInfoO">{t("turnkey_p13")}</p>
+        <p className="headingInfoO">{t("turnkey_p14")}</p>
+        <p className="headingInfoOBig">{t("turnkey_p15")}</p>
       </div>
     </div>
   );

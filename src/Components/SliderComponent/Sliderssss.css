@@ -1,0 +1,296 @@
+.SliderImg {
+  height: 100vh;
+  width: 100% !important;
+}
+
+.slick-arrow {
+  width: 50px;
+  margin-left: 50px;
+  height: 50px;
+  padding: 10px !important;
+}
+.slick-prev {
+  z-index: 9999;
+  display: flex;
+  position: absolute;
+  font-size: 80px;
+  top: 50%;
+  left: -45px;
+}
+.slick-next {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  height: 50px;
+  padding: 0px !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 90px !important;
+}
+.SliderInsideComponent {
+  width: 100%;
+}
+.movingText2Right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: flex-start;
+  text-align: left;
+  font-size: 50px;
+  position: absolute;
+  top: 30%;
+  right: 8%;
+  /* width: 400px; */
+  color: black !important;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.836) !important;
+  border-radius: 520px;
+  direction: rtl;
+}
+.movingText2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: flex-start;
+  text-align: left;
+  font-size: 50px;
+  position: absolute;
+  top: 30%;
+  left: 8%;
+  /* width: 400px; */
+  color: black !important;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.836) !important;
+  border-radius: 520px;
+}
+
+.movingText2 p {
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+  padding-left: 60px;
+}
+.movingText2Right p {
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+  padding-right: 60px;
+}
+.clickHereButton {
+  border-radius: 50px;
+  padding: 25px;
+  font-size: 20px;
+  background-color: #345e9e;
+  border: 1px solid white;
+  /* margin-bottom: 10px; */
+  margin-left: 30px;
+  margin-right: 20px;
+}
+.clickHereButton a {
+  color: white;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.clickHereButton:hover {
+  color: yellow;
+  border: 2px solid yellow;
+}
+
+.clickHereButton a:hover {
+  color: yellow;
+}
+@media screen and (min-width: 1800px) {
+  .SliderContainer {
+    margin-bottom: 100px;
+  }
+  .movingText1 {
+    font-size: 24px;
+    position: absolute;
+    top: 38%;
+    right: 20%;
+    font-weight: bold;
+    color: red;
+    background-color: rgba(255, 255, 255, 0.589);
+    border-radius: 50px;
+    padding: 5px;
+  }
+  .movingText2 {
+    text-align: center;
+    font-size: 45px;
+    position: absolute;
+    top: 30%;
+    /* left: 1s5%; */
+    /* transform: translate(-50%, -50%); */
+    color: white;
+    font-weight: bold;
+    color: rgb(255, 255, 48);
+    background-color: rgba(255, 255, 255, 0.504);
+    border-radius: 520px;
+    padding: 35px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .movingText2Right {
+    text-align: center;
+    font-size: 45px;
+    position: absolute;
+    top: 30%;
+
+    color: white;
+    font-weight: bold;
+    color: rgb(255, 255, 48);
+    background-color: rgba(255, 255, 255, 0.504);
+    border-radius: 520px;
+    padding: 35px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width: 1650px) {
+  .movingText2 {
+    font-size: 30px;
+    position: absolute;
+    top: 35%;
+  }
+  .movingText2Right {
+    font-size: 30px;
+    position: absolute;
+    top: 35%;
+  }
+  .SliderContainer .alice-carousel__next-btn-item {
+    top: 50%;
+  }
+  .SliderContainer .alice-carousel__prev-btn-item {
+    top: 50%;
+  }
+  .movingText2 p {
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+  }
+  .movingText2Right p {
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-right: 30px;
+  }
+  .clickHereButton {
+    border-radius: 50px;
+    padding: 18px;
+    font-size: 20px;
+    background-color: #345e9e;
+    border: 1px solid white;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .SliderContainer {
+    margin-bottom: 0px;
+  }
+  .SliderImg {
+    height: 80vh !important;
+  }
+  .clickHereButton {
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 10px;
+    background-color: #345e9e;
+    border: 1px solid white;
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+  .movingText2 {
+    font-size: 20px;
+    position: absolute;
+    top: 25%;
+  }
+  .movingText2Right {
+    font-size: 20px;
+    position: absolute;
+    top: 25%;
+  }
+  .movingText2 p {
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+  }
+  .movingText2Right p {
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 70px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .SliderContainer {
+    margin-bottom: 0px;
+  }
+  .clickHereButton {
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 8px;
+    background-color: #345e9e;
+    border: 1px solid white;
+    margin-bottom: 0px;
+  }
+  .clickHereButton {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .movingText2 {
+    font-size: 12px;
+  }
+  .movingText2Right {
+    font-size: 12px;
+    top: 25%;
+  }
+  .movingText2 {
+    top: 25%;
+  }
+  .movingText2Right p {
+    padding-bottom: 5px;
+    padding-right: 17px;
+  }
+  .movingText2 p {
+    padding-bottom: 5px;
+    padding-left: 17px;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 50px !important;
+  }
+  .slick-prev {
+    z-index: 9999;
+    display: flex;
+    position: absolute;
+    font-size: 80px;
+    top: 50%;
+    left: -45px;
+  }
+  .slick-next {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    height: 50px;
+    padding: 0px !important;
+  }
+}

@@ -1,73 +1,60 @@
 import React from "react";
 import "./BusinessOpp.css";
+import { useTranslation } from "react-i18next";
 
-export default function BusinessOpp() {
+export default function BusinessOpp(props) {
+  const { t } = useTranslation();
+  let lng = props.lang;
   return (
     <div>
       {/* <CustomHeader /> */}
-      <div className="BusinessOppContainer">
-        <p className="heading">
-          <span>BUSINESS</span> OPPOTUNITIES
+      <div
+        className={
+          lng === "ar" ? "BusinessOppContainerRight" : "BusinessOppContainer"
+        }
+      >
+        <p className="heading headingWord">
+          <span>{t("businessOp_w2")}</span> {t("businessOp_w3")}
         </p>
-        <p className="headingInfoO">
-          Very often customers or partners upgrade their productions and put
-          their old production lines up for sale.
-        </p>
-        <p className="headingInfoO">
-          It also allows you to pay less and slowly start making a product by
-          learning about the productive industry.
-        </p>
-        <p className="headingInfoO">
-          We offer a wide range of complete production lines available
-          immediately.
-        </p>
-        <p className="headingInfo">As well in</p>
+        <p className="headingInfoO">{t("businessOpp_p1")}</p>
+        <p className="headingInfoO">{t("businessOpp_p2")}</p>
+        <p className="headingInfoO">{t("businessOpp_p3")}</p>
+        <p className="headingInfo">{t("businessOpp_p4")}</p>
         <ol className="orderList">
-          <p>Agrifood</p>
-          <li>Milk, water or juice production line</li>
-          <li>Egg tray production line</li>
-          <li>Butter production line</li>
-          <li>Ice cream production line</li>
+          <p>{t("businessOpp_p5")}</p>
+          <li>{t("businessOpp_p6")}</li>
+          <li>{t("businessOpp_p7_7")}</li>
+          <li>{t("businessOpp_p7")}</li>
+          <li>{t("businessOpp_p8")}</li>
+          <li>{t("businessOpp_p9")}</li>
         </ol>
-        <p className="headingInfoO">
-          And many other lines related to the food industry in all its forms.
-        </p>
+        <p className="headingInfoO">{t("businessOpp_p10")}</p>
 
         <ol className="orderList">
-          <p>Plastics</p>
-          <li>PET bottle production line</li>
-          <li>Plastic table chair manufacturing line</li>
-          <li>Plastics accessories production line</li>
-          <li>Line and production of all accessories injected into molds</li>
-          <li>PP PE PPR PRR PVC pipe production line</li>
+          <p>{t("businessOpp_p11")}</p>
+          <li>{t("businessOpp_p12")}</li>
+          <li>{t("businessOpp_p13")}</li>
+          <li>{t("businessOpp_p14")}</li>
+          <li>{t("businessOpp_p15")}</li>
+          <li>{t("businessOpp_p16")}</li>
         </ol>
         <ol className="orderList">
-          <p>Chemical</p>
-          <li>Paint mixing production lines</li>
-          <li>Chemical packaging production line</li>
+          <p>{t("businessOpp_p17")}</p>
+          <li>{t("businessOpp_p18")}</li>
+          <li>{t("businessOpp_p19")}</li>
         </ol>
         <ol className="orderList">
-          <p>Drug production</p>
-          <li>Medicine packaging production line</li>
-          <li>
-            Assembly and packaging production line for medicines, syrups,
-            powder, ointments
-          </li>
+          <p>{t("businessOpp_p20")}</p>
+          <li>{t("businessOpp_p21")}</li>
+          <li>{t("businessOpp_p22")}</li>
         </ol>
         <ol className="orderList">
-          <p>Electronic assembly line</p>
-          <li>
-            Assembly and packaging production line for telephony, television,
-            electronic components, etc.
-          </li>
-          <li>Solar panel assembly line</li>
+          <p>{t("businessOpp_p23")}</p>
+          <li>{t("businessOpp_p24")}</li>
+          <li>{t("businessOpp_p25")}</li>
         </ol>
 
-        <p className="headingInfoO">
-          And many other opportunities. Of course, these production lines are
-          100% reviewed by our experts and set up, commissioned and guaranteed
-          by us.
-        </p>
+        <p className="headingInfoOBig">{t("businessOpp_p26")}</p>
       </div>
     </div>
   );

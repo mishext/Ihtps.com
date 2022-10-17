@@ -1,15 +1,13 @@
 import React from "react";
-import Header from "../../Components/Header/Header";
 import AboutUs from "../../Components/AboutUs/AboutUs";
 import Services from "../../Components/Services/Services";
-import Slider from "../../Components/SliderComponent/Slider";
+import Sliders from "../../Components/SliderComponent/Sliders";
 
-function Home() {
+function Home(props) {
   return (
     <div>
-      <Slider />
-      {/* <Header /> */}
-      <AboutUs />
+      <Sliders lang={props.lang} />
+      <AboutUs lang={props.lang} />
       <Services />
     </div>
   );

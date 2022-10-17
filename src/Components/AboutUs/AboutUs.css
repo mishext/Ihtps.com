@@ -3,7 +3,8 @@
   background-size: cover;
   padding: 75px 0;
   /* padding-top: 0px; */
-  margin-top: 200px;
+  padding-top: 260px;
+  margin-top: 100px;
   /* height: 90vh; */
   display: flex;
   flex-direction: row;
@@ -11,6 +12,7 @@
   justify-content: space-around;
   justify-items: center;
   align-items: center;
+  padding-bottom: 300px;
 }
 .AboutUsContainerS {
   display: flex;
@@ -20,10 +22,20 @@
   align-items: flex-start;
   align-content: center;
 }
+.AboutUsContainerSRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: flex-start;
+  align-content: center;
+  direction: rtl;
+}
 
-/* .AboutUsText p {
-  padding-right: 140px;
-} */
+.AboutUsText p {
+  /* display: flex; */
+  text-align: right;
+}
 .AboutUsp3 {
   width: 600px;
 }
@@ -71,6 +83,15 @@
     align-items: center;
     align-content: flex-start;
   }
+  .AboutUsContainerSRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: flex-start;
+    align-content: center;
+  }
+
   .AboutUsp1 {
     font-size: 30px;
   }
@@ -100,6 +121,7 @@
     justify-items: flex-start;
     align-items: center;
     align-content: flex-start;
+    padding-bottom: 0px;
   }
   .AboutUsImage {
     width: 300px;

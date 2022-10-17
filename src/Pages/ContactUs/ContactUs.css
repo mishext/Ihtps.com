@@ -1,11 +1,22 @@
 .ContactUsContainer {
   display: flex;
   flex-direction: column;
-  padding-top: 150px;
+  padding-top: 240px;
   padding-left: 70px;
   background: url(../../Images/bg-about.jpg) repeat-x top center;
   background-size: cover;
   /* height: 100vh; */
+}
+.ContactUsContainerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  padding-top: 240px;
+  padding-right: 70px;
+  background: url(../../Images/bg-about.jpg) repeat-x top center;
+  background-size: cover;
+  direction: rtl;
 }
 .whatsAppIcon {
   width: 50px;
@@ -17,13 +28,30 @@
   list-style: circle;
   text-decoration: solid;
 }
+ul {
+  direction: rtl;
+}
+.orderList .contactRight {
+  direction: rtl;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .orderList .contact {
+  /* align-items: flex-end; */
+  /* text-align: end; */
   /* font-size: 10px; */
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
 .orderList .contact span {
   color: #00548b;
+}
+.orderList .contactRight span {
+  color: #00548b;
+}
+.headingInfoC {
+  font-size: 28px !important;
 }
 
 .formContainer {
@@ -34,7 +62,7 @@
   align-items: center;
   align-content: center;
   width: fit-content;
-  background-color: #00548b;
+  background-color: #00538be5;
   border-radius: 10px;
   padding: 50px;
   margin-top: 20px;
@@ -45,6 +73,9 @@
   padding: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 18px;
+  background-color: white;
+  border: 1px solid black;
+  /* margin: 10px; */
   /* margin-top: 15px; */
 }
 .inputMessg {
@@ -53,12 +84,19 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 18px;
   margin-bottom: 25px;
+  background-color: white;
+  border: 1px solid black;
   /* margin-top: 10px; */
 }
 
 .sendButton {
   font-size: 18px;
   background-color: aliceblue;
+  font-weight: bold;
+}
+.sendButton:hover {
+  font-size: 18px;
+  background-color: white;
   font-weight: bold;
 }
 
@@ -72,11 +110,55 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.errors {
+  padding-top: 0px;
+  margin-top: 2px;
+  font-size: 16px;
+  color: rgb(179, 9, 9);
+}
+
+.isValid {
+  display: none;
+}
+
+.isValid:invalid {
+  display: block;
+}
+.success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(0, 255, 0);
+  border: 1px solid rgb(0, 255, 0);
+  padding: 5px;
+}
+.checkIcon {
+  padding-left: 4px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 @media screen and (max-width: 1090px) {
   .ContactUsContainer {
     padding-left: 40px;
     padding-right: 20px;
     padding-top: 120px;
+  }
+  .ContactUsContainerRight {
+    padding-right: 40px;
+    padding-left: 20px;
+    padding-top: 120px;
+  }
+  .headingInfoC {
+    font-size: 24px !important;
   }
   .heading {
     font-size: 30px;
@@ -125,18 +207,30 @@
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  .errors {
+    font-size: 12px;
+  }
+  .success {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .ContactUsContainer {
     padding-left: 10px;
     padding-top: 100px;
+    padding-right: 30px;
+  }
+  .ContactUsContainerRight {
+    padding-right: 10px;
+    padding-top: 100px;
+    padding-left: 30px;
   }
   .heading {
-    font-size: 20px;
+    font-size: 18px;
   }
   .headingInfo {
-    font-size: 12px;
+    font-size: 19px;
   }
   .orderList p {
     font-size: 12px;
@@ -151,7 +245,7 @@
   .formContainer {
     padding: 10px;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 30px;
     font-size: 20px;
   }
   .inputNormal {
@@ -159,6 +253,7 @@
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 12px;
     margin-top: 10px;
+    margin: 5px;
   }
   .inputMessg {
     width: 250px;
@@ -185,5 +280,20 @@
     font-size: 14px;
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+  .headingInfo3 {
+    font-size: 14px;
+  }
+  .headingInfo3 span {
+    font-size: 14px;
+  }
+  .contact {
+    font-size: 14px !important;
+  }
+  .errors {
+    font-size: 10px;
+  }
+  .success {
+    font-size: 10px;
   }
 }

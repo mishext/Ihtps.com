@@ -1,12 +1,88 @@
+.UsedLinesContainer {
+  margin-top: 260px;
+}
+.usedLinesWord {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 50px;
+  color: #345e9e;
+  text-decoration: underline;
+}
 .MachinesContainer {
-    margin-top: 190px;
-    margin-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  padding-left: 150px;
+  padding-right: 150px;
+  justify-content: center;
+  justify-items: center;
+  gap: 50px;
+}
+.MachinesContainerRight {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  padding-left: 150px;
+  padding-right: 150px;
+  justify-content: center;
+  justify-items: center;
+  gap: 50px;
+  direction: rtl;
 }
 
 .CardContainer {
-    width: 400px;
+  width: 400px;
 }
 
 .CardImg {
-    height: 230px;
+  height: 230px;
+}
+.itemName {
+  font-size: 20px;
+}
+@media screen and (max-width: 1300px) {
+  .MachinesContainer {
+    grid-template-columns: repeat(2, 3fr);
+    gap: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .MachinesContainerRight {
+    grid-template-columns: repeat(2, 3fr);
+    gap: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .CardContainer {
+    width: 290px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .UsedLinesContainer {
+    margin-top: 120px;
+  }
+  .usedLinesWord {
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #345e9e;
+    text-decoration: underline;
+  }
+  .MachinesContainer {
+    grid-template-columns: repeat(1, 3fr);
+    gap: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .MachinesContainerRight {
+    grid-template-columns: repeat(1, 3fr);
+    gap: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .CardContainer {
+    width: 290px;
+  }
+  .itemName {
+    font-size: 14px;
+  }
 }

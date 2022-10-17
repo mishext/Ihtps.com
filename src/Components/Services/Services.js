@@ -9,12 +9,14 @@ import Service1 from "../../Images/services.jpg";
 import Service2 from "../../Images/test6.jpg";
 import Service3 from "../../Images/services3.jpg";
 import "./Services.css";
+import { useTranslation } from "react-i18next";
 
 export default function Services() {
+  const { t } = useTranslation();
   return (
     <div className="ServicesContainer">
       <p className="ServicesP">
-        <span>OUR</span> SERVCES
+        <span>{t("ourservices_w1")}</span> {t("ourservices_w2")}
       </p>
       <div className="CardsContainer">
         <Card className="Card">
@@ -28,7 +30,7 @@ export default function Services() {
             />
             <CardContent>
               <Typography className="MainService" component="div">
-                Engineering
+                {t("eng_w1")}
               </Typography>
               {/* <Typography className="descService" color="text.secondary">
                 Lizards are a widespread group of squamate reptiles, with over
@@ -47,7 +49,7 @@ export default function Services() {
             />
             <CardContent>
               <Typography className="MainService" component="div">
-                Procurement
+                {t("proc_w1")}
               </Typography>
               {/* <Typography className="descService" color="text.secondary">
                 Lizards are a widespread group of squamate reptiles, with over
@@ -66,7 +68,7 @@ export default function Services() {
             />
             <CardContent>
               <Typography component="div" className="MainService">
-                Contractor
+                {t("contractor_w1")}
               </Typography>
               {/* <Typography className="descService" color="text.secondary">
                 Lizards are a widespread group of squamate reptiles, with over

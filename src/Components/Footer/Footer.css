@@ -45,6 +45,31 @@
   padding-right: 100px;
 }
 
+.footerAddress {
+  display: flex;
+  flex-direction: row;
+  color: #345e9e;
+  font-weight: bold;
+  font-size: 18px;
+}
+.footerAddressRight {
+  display: flex;
+  flex-direction: row;
+  color: #345e9e;
+  font-weight: bold;
+  font-size: 18px;
+  direction: rtl;
+  text-align: center;
+}
+
+.address {
+  font-weight: normal;
+}
+.footerAddress p {
+  padding: 5px;
+  margin: 0px;
+}
+
 .copyRight {
   font-family: "Courier New", Courier, monospace;
   font-size: 12px;
@@ -68,6 +93,14 @@
     display: flex;
     flex-direction: row;
   }
+  .footerAddress {
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .footerAddressRight {
+    flex-direction: column;
+    font-size: 14px;
+  }
   .copyRight {
     font-size: 9px;
     text-align: center;
@@ -89,6 +122,14 @@
     color: #345e9ee3;
     display: flex;
     flex-direction: row;
+  }
+  .footerAddress {
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .footerAddressRight {
+    flex-direction: column;
+    font-size: 12px;
   }
   .copyRight {
     font-size: 6px;

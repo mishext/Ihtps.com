@@ -1,13 +1,24 @@
 .BusinessOppContainer {
   display: flex;
   flex-direction: column;
-  padding-top: 150px;
+  padding-top: 240px;
   padding-left: 70px;
   background: url(../../Images/bg-about.jpg) repeat-x top center;
   background-size: cover;
 }
+.BusinessOppContainerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: start;
+  padding-top: 240px;
+  padding-right: 70px;
+  background: url(../../Images/bg-about.jpg) repeat-x top center;
+  background-size: cover;
+  direction: rtl;
+}
 .orderList {
-  font-size: 18px;
+  font-size: 20px;
   padding-top: 0px;
   margin-top: 0px;
 }
@@ -24,6 +35,11 @@
   color: #00548b;
   font-weight: bold;
 }
+.headingWord {
+  font-size: 40px;
+  color: #00548b;
+  font-weight: bold;
+}
 .heading span {
   font-weight: bold;
   padding-bottom: 5px;
@@ -35,23 +51,28 @@
 }
 .headingInfo {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 18px;
+  font-size: 22px;
 }
 .headingInfo1 {
   color: #00548b;
   font-weight: bold;
   /* text-decoration: underline; */
-  font-size: 18px;
+  font-size: 22px;
 }
 .headingInfo2 {
   color: #00548b;
   font-weight: bold;
   font-style: oblique;
   text-decoration: underline;
-  font-size: 18;
+  font-size: 18px;
 }
 @media screen and (max-width: 1090px) {
   .BusinessOppContainer {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 120px;
+  }
+  .BusinessOppContainerRight {
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 120px;
@@ -69,8 +90,15 @@
     padding-left: 20px;
     padding-top: 100px;
   }
+  .BusinessOppContainerRight {
+    padding-right: 20px;
+    padding-top: 100px;
+  }
+  .headingWord {
+    font-size: 16px;
+  }
   .heading {
-    font-size: 20px;
+    font-size: 18px;
   }
   .headingInfo {
     font-size: 12px;

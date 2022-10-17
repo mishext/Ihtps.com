@@ -3,11 +3,11 @@ import AboutUs from "../../Components/AboutUs/AboutUs";
 
 import "./AboutUsPage.css";
 
-export default function AboutUsPage() {
+export default function AboutUsPage(props) {
   return (
     <div className="AboutUsPage">
       {/* <CustomHeader /> */}
-      <AboutUs className="AboutUs" />
+      <AboutUs className="AboutUs" lang={props.lang} />
     </div>
   );
 }
